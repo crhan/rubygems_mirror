@@ -1,0 +1,4 @@
+* * * * * /bin/bash -l -c /app/cron/script/update_rubymirror >> /app/cron/log/update_mirror.log 2>&1
+#30 2 * * *   /bin/bash -l -c /home/admin/bin/run_backup
+#0 0 * * *    /bin/bash -l -c /home/admin/bin/sync_ruby_mirror >> /alidata1/sync_ruby_mirror.log 2>&1
+#0 4 * * *    /bin/bash -l -c /home/admin/bin/fix_deps >> /alidata1/fix_deps.log 2>&1
