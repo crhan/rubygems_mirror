@@ -33,6 +33,7 @@ ADD ${APP}/Gemfile /app/${APP}/Gemfile
 ADD ${APP}/Gemfile.lock /app/${APP}/Gemfile.lock
 
 WORKDIR /app/${APP}
+RUN sed -i '/ruby "2.2.2"/d' Gemfile
 
 # 修改了项目文件，但是没有修改 Gemfile 的情况下
 # 可以不需要重新 `bundle install`
