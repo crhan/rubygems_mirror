@@ -1,6 +1,6 @@
 [submodule "web"]
 	path = web
-	url = git@github.com:alibaba/ruby.taobao.org.git
+	url = https://github.com/alibaba/ruby.taobao.org.git
 [submodule "rubygems-mirror"]
 	path = rubygems-mirror
 	url = https://github.com/alibaba/rubygems-mirror.git
