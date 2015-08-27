@@ -1,6 +1,0 @@
-FROM ubuntu:trusty
-MAINTAINER qhwa <qhwa@pnq.cc>
-
-ADD sources.list.trusty /etc/apt/sources.list
-RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 40976EAF437D05B5 3B4FE6ACC0B21F32
-RUN apt-get update

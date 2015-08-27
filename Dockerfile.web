@@ -9,11 +9,8 @@ MAINTAINER qhwa <qhwa@pnq.cc>
 #RUN apt-get update
 
 # -- web
-ADD web /usr/share/nginx/html
-
-# -- mirror
-ADD rubygems-mirror /app/rubygems-mirror
+ADD web /app/web
+RUN rm /etc/nginx/conf.d/*
+ADD rc/nginx /etc/nginx/conf.d/
 
 CMD ["nginx", "-g", "daemon off;"]
-FROM nginx
-COPY static-html-directory /usr/share/nginx/html
