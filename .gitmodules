@@ -6,4 +6,4 @@
 	url = https://github.com/alibaba/rubygems-mirror.git
 [submodule "bundler-api"]
 	path = bundler-api
-	url = https://github.com/bundler/bundler-api.git
+  url = https://github.com/qhwa/bundler-api.git
