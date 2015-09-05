@@ -5,6 +5,10 @@ web:
     - "80:80"
   links:
     - "mirror:app"
+  environment:
+    # fill with real gira api token
+    # from gira.cc
+    GIRA_API_TOKEN: ""
 
 mirror:
   dockerfile: Dockerfile
