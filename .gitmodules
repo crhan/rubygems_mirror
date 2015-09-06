@@ -1,9 +1,9 @@
-[submodule "web"]
-	path = web
-	url = https://github.com/alibaba/ruby.taobao.org.git
 [submodule "rubygems-mirror"]
-	path = rubygems-mirror
+	path = gems/rubygems-mirror
 	url = https://github.com/alibaba/rubygems-mirror.git
 [submodule "bundler-api"]
-	path = bundler-api
+	path = gems/bundler-api
   url = https://github.com/qhwa/bundler-api.git
+[submodule "web/htdocs"]
+	path = web/htdocs
+	url = https://github.com/alibaba/ruby.taobao.org.git

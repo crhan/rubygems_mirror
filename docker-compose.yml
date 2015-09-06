@@ -1,18 +1,20 @@
 web:
-  dockerfile: "Dockerfile.web"
-  build: .
+  dockerfile: "Dockerfile"
+  build: web
   ports:
     - "80:80"
   links:
-    - "mirror:app"
+    - "gems_api:gems_api"
+  volumes:
+    - "/var/run/ruby_mirror/sources:/ruby_sources"
   environment:
     # fill with real gira api token
     # from gira.cc
     GIRA_API_TOKEN: ""
 
-mirror:
-  dockerfile: Dockerfile
-  build: .
+gems_api:
+  dockerfile: "Dockerfile"
+  build: gems
   ports:
     - "6000:6000"
   links:

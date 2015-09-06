@@ -9,7 +9,7 @@ REJECT_DIRS=""
 
 OPTS="-m -L -P /ruby_sources -R '*.html*' -X $REJECT_DIRS"
 OPTS="-m -L -P /ruby_sources -R '*.html*'"
-UPSTREAM=http://cache.ruby-lang.org/pub/ruby/
+UPSTREAM=http://cache.ruby-lang.org/pub/
 
 if [ -n "$GIRA_API_TOKEN" ]; then
   proxychains wget $OPTS $UPSTREAM
