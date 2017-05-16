@@ -9,9 +9,9 @@
     provider: aliyun_oss
 
     # TODO: use env variable
-    bucket: rubygems-china                                # destination Aliyun OSS Bucket
-    access_key_id: cB5P7bb6Yl7RFWOC                       # aliyun API access key
-    secret_access_key: OvAyJPH7hCwUfYoPGg3brYDhERQiSB     # aliyun API secret access key
+    bucket: <your_bucket>                                # destination Aliyun OSS Bucket
+    access_key_id: <your_key>                            # aliyun API access key
+    secret_access_key: <your_secret>                     # aliyun API secret access key
     #server: oss-internal.aliyuncs.com
     server: oss.aliyuncs.com
 
